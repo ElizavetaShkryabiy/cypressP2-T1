@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cypress": "^10.7.0"
+  },
+  "name": "hw-cy-2",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

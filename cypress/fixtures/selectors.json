@@ -1,0 +1,20 @@
+{
+  "pageName": ".page-header__title",
+  "weekDays": "a.page-nav__day",
+  "tomorrow":"a.page-nav__day:nth-child(2)",
+  "movieBody": "main>section.movie",
+  "poster":"main>section.movie>.movie__info>.movie__poster",
+  "description":"main>section.movie>.movie__info>.movie__description",
+  "movieName":"main>section.movie>.movie__info>.movie__description>.movie__title",
+  "synopsis":"main>section.movie>.movie__info>.movie__description>.movie__synopsis",
+  "hallTitle":"main>section.movie>.movie-seances__hall>.movie-seances__hall-title",
+  "seancesList":"main>section.movie>.movie-seances__hall>.movie-seances__list",
+  "seanceTime":"main>section.movie>.movie-seances__hall>.movie-seances__list>.movie-seances__time-block",
+  "emailField":"[name='email']",
+  "passwordField":"[name='password']",
+  "loginButton":".login__button",
+  "hallControllList":"#hall-control > .conf-step__header",
+  "moovieTime":".movie-seances__time",
+  "bookingPlaceButton":".acceptin-button",
+  "successBookingTitle":".ticket__check-title"
+}
