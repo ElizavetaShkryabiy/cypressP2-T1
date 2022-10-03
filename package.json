@@ -1,13 +1,21 @@
 {
-  "dependencies": {
-    "cypress": "^10.7.0"
-  },
   "name": "hw-cy-2",
   "version": "1.0.0",
   "main": "cypress.config.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  },
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "cy:admin":"cypress run --spec 'cypress/e2e/admin.login.cy.js' --record --key 114a73db-2ad4-40bc-b28b-b3f955e42e47",
+    "cy:dashboard":"cypress run --spec 'cypress/e2e/cinema.dashboard.cy.js' --record --key 114a73db-2ad4-40bc-b28b-b3f955e42e47",
+    "cy:tickets":"cypress run --spec 'cypress/e2e/ticket.buying.cy.js' --record --key 114a73db-2ad4-40bc-b28b-b3f955e42e47",
+    "cy:parallel":"npm run cy:dashboard & npm run cy:tickets",
+    "cy:chrome":"npm run cy:parallel --browser chrome",
+    "cy:edge":"npm run cy:parallel --browser edge",
+    "cy:electron":"npm run cy:parallel --browser electron",
+    "cy:paralleleComplete":"npm run cy:dashboard --browser chrome & npm run cy:tickets --browser edge",
+    "cy:folders":"cypress run --spec 'cypress/folder' $ cypress run --spec 'cypress/folder.second' --record --key 114a73db-2ad4-40bc-b28b-b3f955e42e47"
   },
   "author": "",
   "license": "ISC",
